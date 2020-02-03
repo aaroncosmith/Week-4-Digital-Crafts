@@ -1,7 +1,7 @@
-const myName = prompt("What is your name?")
+world = "Hello, world!!"
 
 function hello(name) {
-    console.log(`Hello ${name}`)
+    console.log(world)
 }
 
-greeting(myName)
+greeting(world)
