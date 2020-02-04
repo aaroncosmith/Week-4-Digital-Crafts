@@ -7,17 +7,29 @@
     <title>DOM Starter Kit</title>
     
 </head>
+<style>
+html {
+    background-color: aqua;
+    color: white;
+}
+</style>
 <body>
     <p id="helloWorld">Hello World!</p>
-    <button type="button" id="clickMe">Click Me</button>
+    <form>
+        <label>Your Name
+            <input type="text" id="userInput" value=""/>
+        </label>
+        <button type="button" id="clickMe">Click Me</button>
+    </form>
 </body>
 <script>
     const myButton = document.getElementById("clickMe");
     const myText = document.getElementById("helloWorld");
+    const myInput = document.getElementById("userInput");
     myButton.addEventListener("click", function(e){
         e.preventDefault();
         console.log("Clicked");
-        myText.innerHTML = "I HAVE BEEN CLICKED AHHRHRHHSLDLKSJLJLAJLJLK!!!";
+        myText.innerHTML = `Hello, ${myInput.value}`;
     })
 </script>
 </html>
