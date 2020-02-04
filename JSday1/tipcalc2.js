@@ -33,4 +33,18 @@ const total_with_tip = total_amount + tip_amount;
 console.log("TIPMONT:" + tip_amount);
 console.log("TOTEMNT:" + total_with_tip);
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // this is some weak code, I will improve upon it later but I need to move on
