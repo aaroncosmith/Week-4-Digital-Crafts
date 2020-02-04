@@ -10,9 +10,105 @@
 html {
     background-color: teal;
     color: white;
+    font-size: 24px;
 }
 </style>
 <body>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, hic consequuntur earum sit atque nisi alias commodi vero obcaecati officia natus, ducimus maiores incidunt est quod repudiandae exercitationem in impedit!</p>
+    <p>Today, my fabulous camp group went to a(n) 
+        <span id="adj1">____________ (adjective)</span> amusement park. It was a
+        fun park with lots of cool <span id="plnoun1">____________ (plural noun)</span>
+        and enjoyable play structures. When we got there, my
+        kind counselor shouted loudly, "Everybody off the <span id="noun1">
+        ____________ (noun)</span>." We all pushed out in a terrible
+        hurry. My counselor handed out yellow tickets, and
+        we scurried in. I was so excited! I couldn't figure out
+        what exciting thing to do first. I saw a scary roller
+        coaster I really liked so, I <span id="adverb1">____________ (adverb)</span> ran
+        over to get in the long line that had about <span id="number1">
+        ____________ (number)</span> people in it. When I finally
+        got on the roller coaster I was <span id="pastten1">____________ (past
+        tense verb)</span>. In fact I was so nervous my two knees
+        were knocking together. This was the <span id="estad">____________
+        (-est adjective)</span> ride I had ever been on! In about two
+        minutes I heard the crank and grinding of the gears.
+        That’s when the ride began! When I got to the bottom,
+        I was a little <span id="pastten2">____________ (past tense verb)</span> but I
+        was proud of myself. The rest of the day went
+        <span id="adverb2">____________ (adverb)</span>. It was a(n) <span id="adj2">____________
+        (adjective)</span> day at the fun park. </p>
+
+        <p>Fill out the following fourms and then click the button! Enjoy your madlib!</p>
+    <form>
+        <label>Adjective:
+            <input type="text" id="adj1Input" value="" />
+        </label>
+        <label>Plural Noun:
+            <input type="text" id="plnoun1Input" value="" />
+        </label>
+        <label>Noun:
+            <input type="text" id="noun1Input" value="" />
+        </label>
+        <label>Adverb:
+            <input type="text" id="adver1Input" value="" />
+        </label>
+        <label>Number:
+            <input type="text" id="number1Input" value="" />
+        </label>
+        <label>Past Tense Verb:
+            <input type="text" id="pastten1Input" value="" />
+        </label>
+        <label>-est Objective:
+            <input type="text" id="estadInput" value="" />
+        </label>
+        <label>Past Tense Verb:
+            <input type="text" id="pastten2Input" value="" />
+        </label>
+        <label>Adverb:
+            <input type="text" id="adverb2Input" value="" />
+        </label>
+        <label>Adjective:
+            <input type="text" id="adj2Input" value="" />
+        </label>
+        <button type="button" id="clickMe">Click Me</button>
+    </form>
+    
 </body>
+<script>
+    const myButton = document.getElementById("clickMe");
+    const adj1 = document.getElementById("adj1");
+    const adj1Input = document.getElementById("adj1Input");
+    const plnoun1 = document.getElementById("plnoun1");
+    const plnoun1Input = document.getElementById("plnoun1Input");
+    const noun1 = document.getElementById("noun1");
+    const noun1Input = document.getElementById("noun1Input");
+    const adverb1 = document.getElementById("adverb1");
+    const adver1Input = document.getElementById("adver1Input");
+    const number1 = document.getElementById("number1");
+    const number1Input = document.getElementById("number1Input");
+    const pastten1 = document.getElementById("pastten1");
+    const pastten1Input = document.getElementById("pastten1Input");
+    const estad = document.getElementById("estad");
+    const estadInput = document.getElementById("estadInput");
+    const pastten2 = document.getElementById("pastten2");
+    const pastten2Input = document.getElementById("pastten2Input");
+    const adverb2 = document.getElementById("adverb2");
+    const adverb2Input = document.getElementById("adverb2Input");
+    const adj2 = document.getElementById("adj2");
+    const adj2Input = document.getElementById("adj2Input");
+    myButton.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        adj1.innerHTML = adj1Input.value;
+        plnoun1.innerHTML = plnoun1Input.value;
+        noun1.innerHTML = noun1Input.value;
+        adverb1.innerHTML = adver1Input.value;
+        number1.innerHTML = number1Input.value;
+        pastten1.innerHTML = pastten1Input.value;
+        estad.innerHTML = estadInput.value;
+        pastten2.innerHTML = pastten2Input.value;
+        adverb2.innerHTML = adverb2Input.value;
+        adj2.innerHTML = adj2Input.value;
+
+    });
+</script>
 </html>
