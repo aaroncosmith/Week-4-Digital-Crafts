@@ -5,39 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MADLIB TIME!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-html {
-    background-color: teal;
-    color: white;
-    font-size: 24px;
-    padding: 0px 100px 0px 100px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-button {
-    border: white;
-    border-width: 2px;
-}
-
-.logo {
-    width:auto;
-    height:auto;
-    display: block;
-    max-width: 730px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-form {
-    text-align: justify;
-}
-
-
-</style>
 <body>
     <div>
         <img class="logo" src="logo.png" alt="madlib logo">
@@ -69,82 +38,39 @@ form {
         <p>Fill out the following fourms and then click the button! Enjoy your madlib!</p>
     <form>
         <label>Adjective:
-            <input type="text" id="adj1Input" value="" />
+            <input type="text" class="userInput" id="adj1Input" value="" />
         </label>
         <label>Plural Noun:
-            <input type="text" id="plnoun1Input" value="" />
+            <input type="text" class="userInput" id="plnoun1Input" value="" />
         </label>
         <label>Noun:
-            <input type="text" id="noun1Input" value="" />
+            <input type="text" class="userInput" id="noun1Input" value="" />
         </label>
         <label>Adverb:
-            <input type="text" id="adver1Input" value="" />
+            <input type="text" class="userInput" id="adver1Input" value="" />
         </label>
         <label>Number:
-            <input type="text" id="number1Input" value="" />
+            <input type="text" class="userInput" id="number1Input" value="" />
         </label>
         <label>Past Tense Verb:
-            <input type="text" id="pastten1Input" value="" />
+            <input type="text" class="userInput" id="pastten1Input" value="" />
         </label>
         <label>-est Objective:
-            <input type="text" id="estadInput" value="" />
+            <input type="text" class="userInput" id="estadInput" value="" />
         </label>
         <label>Past Tense Verb:
-            <input type="text" id="pastten2Input" value="" />
+            <input type="text" class="userInput" id="pastten2Input" value="" />
         </label>
         <label>Adverb:
-            <input type="text" id="adverb2Input" value="" />
+            <input type="text" class="userInput" id="adverb2Input" value="" />
         </label>
         <label>Adjective:
-            <input type="text" id="adj2Input" value="" />
+            <input type="text" class="userInput" id="adj2Input" value="" />
         </label>
         <button type="button" id="clickMe" class="button">Click Me</button>
     </form>
     
 </body>
-<script>
-    // const myButton = document.getElementById("clickMe");
-    // const adj1 = document.getElementById("adj1");
-    // const adj1Input = document.getElementById("adj1Input");
-    // const plnoun1 = document.getElementById("plnoun1");
-    // const plnoun1Input = document.getElementById("plnoun1Input");
-    // const noun1 = document.getElementById("noun1");
-    // const noun1Input = document.getElementById("noun1Input");
-    // const adverb1 = document.getElementById("adverb1");
-    // const adver1Input = document.getElementById("adver1Input");
-    // const number1 = document.getElementById("number1");
-    // const number1Input = document.getElementById("number1Input");
-    // const pastten1 = document.getElementById("pastten1");
-    // const pastten1Input = document.getElementById("pastten1Input");
-    // const estad = document.getElementById("estad");
-    // const estadInput = document.getElementById("estadInput");
-    // const pastten2 = document.getElementById("pastten2");
-    // const pastten2Input = document.getElementById("pastten2Input");
-    // const adverb2 = document.getElementById("adverb2");
-    // const adverb2Input = document.getElementById("adverb2Input");
-    // const adj2 = document.getElementById("adj2");
-    // const adj2Input = document.getElementById("adj2Input");
-    // myButton.addEventListener('click', function (e) {
-    //     e.preventDefault();
-        
-    //     adj1.innerHTML = adj1Input.value;
-    //     plnoun1.innerHTML = plnoun1Input.value;
-    //     noun1.innerHTML = noun1Input.value;
-    //     adverb1.innerHTML = adver1Input.value;
-    //     number1.innerHTML = number1Input.value;
-    //     pastten1.innerHTML = pastten1Input.value;
-    //     estad.innerHTML = estadInput.value;
-    //     pastten2.innerHTML = pastten2Input.value;
-    //     adverb2.innerHTML = adverb2Input.value;
-    //     adj2.innerHTML = adj2Input.value;
-    
-    const allMadLib = document.querySelectorAll('.madlib');
-    console.log(allMadLib)
-
-    allMadLib.forEach(function(madlib, index){
-        madlib.innerHTML = `This is updated text for paragraph ${index}`;
-    });
-
+<script src="scripts.js">
 
 </script>
-</html>
