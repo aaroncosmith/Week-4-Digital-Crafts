@@ -18,3 +18,5 @@ getUserInputButton.addEventListener('click', function (e) {
         madlib.innerHTML = userInputArray[index]
     })
 });
+
+
